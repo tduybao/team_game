@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c55vto16gxu82"]
+
+[ext_resource type="Texture2D" uid="uid://batochmoxtmvb" path="res://png-clipart-minecraft-story-mode-season-two-golden-apple-xbox-360-others-food-rectangle-thumbnail.png" id="1_ubtae"]
+[ext_resource type="Script" path="res://PngClipartMinecraftStoryModeSeasonTwoGoldenAppleXbox360OthersFoodRectangleThumbnail.cs" id="2_jbv4n"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(347, 240)
+texture = ExtResource("1_ubtae")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(361, 41)
+texture = ExtResource("1_ubtae")
+
+[node name="Png-clipart-minecraft-story-mode-season-two-golden-apple-xbox-360-others-food-rectangle-thumbnail" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(249, 51)
+scale = Vector2(0.560345, 0.58908)
+texture = ExtResource("1_ubtae")
+script = ExtResource("2_jbv4n")
