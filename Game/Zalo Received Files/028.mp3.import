@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://70uaamjds4nj"
+path="res://.godot/imported/028.mp3-35ebb5750c48760ff67ac81098e68b49.mp3str"
+
+[deps]
+
+source_file="res://Zalo Received Files/028.mp3"
+dest_files=["res://.godot/imported/028.mp3-35ebb5750c48760ff67ac81098e68b49.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
