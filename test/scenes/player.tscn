@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://nr1myotacn47"]
+
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_orne2"]
+[ext_resource type="Texture2D" uid="uid://bt2oc0c3cxmoh" path="res://assets/Sprite Sheet/2. Run 48 x 48.png" id="1_r4ql5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipy8k"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrgy8"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uexav"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpv62"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oixvo"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3psfu"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tplu6"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(288, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35ap0"]
+atlas = ExtResource("1_r4ql5")
+region = Rect2(336, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_orgo1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipy8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrgy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uexav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpv62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oixvo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3psfu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tplu6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35ap0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y2kwg"]
+radius = 31.0
+height = 136.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_orne2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5.05208, 3.42708)
+sprite_frames = SubResource("SpriteFrames_orgo1")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -1)
+shape = SubResource("CapsuleShape2D_y2kwg")
